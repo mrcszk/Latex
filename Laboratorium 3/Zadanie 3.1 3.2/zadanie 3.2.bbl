@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{Sommerville:2010:SE:1841764}
+Ian Sommerville.
+\newblock {\em Software Engineering}.
+\newblock Addison-Wesley Publishing Company, USA, 9th edition, 2010.
+
+\bibitem{Szmuc:Szpyrka:i:inni}
+Radosław Klimek Konrad Kułakowski Antoni Ligęza Piotr Matyasik Grzegorz J.
+  Nalepa Jacek Piwowarczyk Agata Półrola Grzegorz Rogus Sławomir Samolej
+  Wojciech Szmuc Piotr Szwed Bartosz Trybus Bożena Woźna-Szcześniak
+  Tomasz~Szmuc, Marcin~Szpyrka.
+\newblock {\em Metody formalne w inżynierii oprogramowania systemów czasu
+  rzeczywistego}.
+\newblock Wydaw. Nauk.-Techn., 2010.
+
+\bibitem{Alur:1990:AMR:90397.90438}
+Rajeev Alur and D.~L. Dill.
+\newblock Automata for modeling real-time systems.
+\newblock In {\em Proceedings of the Seventeenth International Colloquium on
+  Automata, Languages and Programming}, pages 322--335, Berlin, Heidelberg,
+  1990. Springer-Verlag.
+
+\end{thebibliography}

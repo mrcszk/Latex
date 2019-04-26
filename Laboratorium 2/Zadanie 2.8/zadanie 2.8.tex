@@ -1,0 +1,40 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\let\lll\undefined
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{times}
+\usepackage{anysize}
+\usepackage{enumitem}
+\usepackage{textcomp}
+
+\sloppy
+
+
+\begin{document} 
+	\textbf{Twierdzenie.} \textit{Jeżeli} $ \lim\limits_{n \to \infty} a_n = a i \lim_{n \to \infty} b_n = +\infty, to:$
+	\begin{enumerate}[label={\arabic*°}]
+		
+		\item \begin{equation}
+\lim_{n \to \infty}(a_n + b_n) = +\infty,
+		\end{equation}
+		\item $\lim_{n \to \infty}(a_n * b_n) = $
+	$\left \{	
+	\begin{array}{ccc}
+	+\infty, & gdy & a>0,\\
+	-\infty, & gdy & a<0,
+	\end{array}
+		\right .
+	$
+	\item $\lim_{n \to \infty}\frac{a_n}{b_n} = 0, przy b_n \neq 0 dla n \in \mathbb{N},$
+	\item $	\lim_{n \to \infty}\frac{a_n}{b_n} = 
+	\left \{	
+	\begin{array}{ccc}
+		+\infty, & gdy & a>0,\\
+		-\infty, & gdy & a<0,
+	\end{array}
+	\right . przy załóżeniu że a_n \neq 0 dla n \in \mathbb{N}.$
+\end{enumerate}
+\end{document}

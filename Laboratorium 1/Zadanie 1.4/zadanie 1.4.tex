@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}   % lub utf8
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{enumerate}
+\usepackage{times}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%\marginsize{left}{right}{top}{bottom}
+\marginsize{3cm}{3cm}{3cm}{3cm}
+\sloppy
+
+\begin{document}
+	\setcounter{section}{1}
+	\setcounter{subsection}{2}
+	\subsubsection{The Model-Checking Process}
+	In applying model checking to a design the 
+	following different phases can be distinguished:
+	\begin{itemize}
+	\item \textsl{Modeling} phase: 
+	\begin{enumerate}[--]
+		\item model the system under consideration using the model description language of the model checker at hand; 
+		\item as a first sanity check and quick assessment of the model perform some simulations; 
+		\item formalize the property to be checked using the property specification language.
+	\end{enumerate} 
+	\item \textsl{Running} phase: run the model checker to check the validity of the property in the system
+		model. 
+		\item \textsl{Analysis} phase: 
+	\begin{enumerate}[--]
+		\item property satisfied? $\rightarrow$ check next property (if any); 
+		\item property violated? $\rightarrow$
+		\begin{enumerate}[1.]
+			\item analyze generated counterexample by simulation; 
+			\item refine the model, design, or property; 
+			\item repeat the entire procedure. 
+		\end{enumerate} 
+		\item out of memory? $\rightarrow$ try to reduce the model and try again.
+		
+	\end{enumerate}
+\end{itemize}
+\end{document}

@@ -1,0 +1,160 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{enumerate}
+\usepackage{times}
+\usepackage{amsthm}
+\usepackage{minipage-marginpar}
+ 
+%\marginsize{left}{right}{top}{bottom}
+\marginsize{3cm}{3cm}{3cm}{3cm}
+\sloppy
+\newcount\spk
+\def\beginscript {\bgroup \parindent=0pt \spk=1 \sl \rightskip,4in
+	\def\par {\ifnum\spk=1 \endgraf \it \spk=2 \leftskip,4in \rightskip0in
+		\else \endgraf \sl \spk=1 \leftskip0in \rightskip,4in \fi}}
+
+\theoremstyle{definition}
+\newtheorem{tw}{Warstwa}
+\begin{document}
+ 
+\section*{Komunikacja w sieci}
+ W modelu ISO-OSI (Open System Interconnection Reference Model) całą procedurę przesyłania komunikatu podzielono na siedem warstw zajmujących się odrębnymi zagadnieniami. W każdej warstwie obowiązują szczegółowe zasady wymiany informacji, zwane protokołem.
+ \begin{table}[htbp]
+ \begin{center}
+ \begin{tabular}{|l|c|}
+ 	\hline
+ 	Nazwa warstwy& Numer warstwy \\
+ 	\hline \hline
+ 	aplikacji&7\\\hline
+ 	prezentacji&6\\\hline
+ 	sesji&5\\\hline\hline
+ 	transportu&4\\\hline
+ 	sieci&3\\\hline
+ 	łącza danych&2\\\hline
+ 	fizyczna&1\\\hline
+ 	
+ \end{tabular}
+\end{center}
+ \end{table}
+
+Dzięki warstwowej strukturze model OSI jest bardzo elastyczny i daje się stosować do komunikacji zarówno w sieciach lokalnych, jak i rozległych. Podział na warstwy zwiększa jednak czas przesłania komunikatu i wydłuża go, gdyż każda warstwa dodaje własne informacje. Dlatego w szybkich sieciach lokalnych najniższe trzy warstwy zlewa się w jedną. Nie przeszkadza to komunikowaniu się tym sieciom z innymi sieciami na wyższych poziomach.
+
+\begin{tw}\textbf{: FIZYCZNA}
+\hangindent=0.4 true in \hangafter=1
+ -- Jest ona odpowiedzialna za przesyłanie strumieni bitów. Odbiera ramki danych z warstwy 2 i przesyła szeregowo, bit po bicie, całą ich strukturę oraz zawartość. Jest ona również odpowiedzialna za odbiór kolejnych bitów przychodzących strumieni danych. Strumienie te są następnie przesyłane do warstwy łącza danych w celu ich ponownego ukształtowania.
+\end{tw}
+\begin{tw}\textbf{: ŁĄCZA DANYCH}
+	\hangindent=0.4 true in \hangafter=1
+	-- Jest ona odpowiedzialna za koncowa˛ zgodność przesyłania
+	danych. W zakresie zadan zwia˛zanych z przesyłaniem, warstwa ła˛cza danych jest odpowiedzialna
+	za upakowanie instrukcji, danych itp. w tzw. ramki. Ramka jest struktura˛ właściwa˛ dla warstwy ła˛cza danych, która zawiera ilość informacji wystarczaja˛ca˛ do pomyslnego
+	przesyłania danych przez siec lokalna˛ do ich miejsca docelowego. Pomyslna transmisja
+	danych zachodzi wtedy, gdy dane osia˛gaja˛ miejsce docelowe w postaci niezmienionej
+	w stosunku do postaci, w której zostały wysłane. Ramka musi wi˛ec zawierac mechanizm
+	umoz˙liwiaja˛cy weryfikowanie integralnosci jej zawartosci podczas transmisji. W wielu sytuacjach
+	wysyłane ramki moga˛ nie osia˛gna˛c miejsca docelowego lub ulec uszkodzeniu podczas
+	transmisji. Warstwa ła˛cza danych jest odpowiedzialna za rozpoznawanie i naprawe˛
+	kaz˙dego takiego błe˛du. Warstwa ła˛cza danych jest równiez˙ odpowiedzialna za ponowne
+	składanie otrzymanych z warstwy fizycznej strumieni binarnych i umieszczanie ich w ramkach.
+	Ze wzgl˛edu na fakt przesyłania zarówno struktury, jak i zawartosci ramki, warstwa
+	ła˛cza danych nie tworzy ramek od nowa. Buforuje ona przychodza˛ce bity dopóki nie uzbiera
+	w ten sposób całej ramki.
+\end{tw}
+
+\begin{tw}\textbf{: SIECI}
+	\hangindent=0.4 true in \hangafter=1
+	-- Warstwa sieci jest odpowiedzialna za okreslenie trasy transmisji mi˛edzy
+	komputerem-nadawca, a komputerem-odbiorca˛. Warstwa ta nie ma zadnych wbudowanych mechanizmów korekcji błe˛dów i w zwia˛zku z tym musi polegac na wiarygodnej transmisji
+	koncowej warstwy ła˛cza danych. Warstwa sieci uz˙ywana jest do komunikowania sie˛
+	z komputerami znajduja˛cymi sie˛ poza lokalnym segmentem sieci LAN. Umoz˙liwia im to
+	własna architektura trasowania, niezale˙zna od adresowania fizycznego warstwy 2. Korzystanie
+	z warstwy sieci nie jest obowia˛zkowe. Wymagane jest jedynie wtedy, gdy komputery
+	komunikuja˛ce sie˛ znajduja˛ sie˛ w róz˙nych segmentach sieci przedzielonych routerem.\medskip
+	
+	\noindent \hspace{0.9cm}
+	Najbardziej znanym protokołem warstwy sieci jest protokół IP (Internet Protocol) obowia˛-zuja˛cy w sieci Internet. Dzieli on przekazywany komunikat na odpowiedniej wielkosci
+	(64 KB) pakiety i przesyła je od komputera do komputera w kierunku komputera docelowego.
+	IP nie gwarantuje dostarczenia pakietu na miejsce. Nie sprawdza on równie˙z, czy
+	pakiet, który dotarł ju˙z do celu, nie został czasem przekłamany. Docieraniem pakietów na
+	miejsce i ich poprawnoscia˛ musi sie˛ zajmowac wyzsza warstwa transportu. IP współpracuje
+	z wieloma (do 256) protokołami warstwy transportu (takimi jak TCP, UDP czy ICMP).
+	Ka˙zdy pakiet ma w swym nagłówku informacj˛e o tym, którego typu protokołu transportu
+	dotyczy.
+\end{tw}
+\begin{tw}\textbf{: TRANSPORTU}
+	\hangindent=0.4 true in \hangafter=1
+	-- Warstwa ta pełni funkcje˛ podobna˛ do funkcji warstwy ła˛cza
+	w tym sensie, ze jest odpowiedzialna za koncowa˛ integralność transmisji. Jednak w odróz
+	˙nieniu od warstwy ła˛cza danych – warstwa transportu umoz˙liwia te˛ usługe˛ równiez˙ poza
+	lokalnymi segmentami sieci LAN. Potrafi bowiem wykrywac pakiety, które zostały przez
+	routery odrzucone i automatycznie generowac z˙a˛danie ich ponownej transmisji. Warstwa
+	transportu identyfikuje oryginalna˛ sekwencje˛ pakietów i ustawia je w oryginalnej kolejno-
+	sci przed wysłaniem ich zawartosci do warstwy sesji.\medskip
+	
+	\noindent \hspace{0.9cm}
+	TCP (Transmission Control Protocol) jest najbardziej znanym protokołem warstwy transportu.
+	Poła˛czenie w TCP jest nawia˛zywane przez trzykrotne „podanie sobie re˛ki”. Niezawodność przesyłania danych jest osia˛gnie˛ta dzie˛ki numerowaniu pakietów, stosowaniu potwierdzen, ponownej transmisji, jesli nie było potwierdzenia przez zbyt długi czas. W celu
+	zwie˛kszenia przepustowosci TCP stosuje tzw. metode˛ „przesuwaja˛cych sie˛ okienek”, która
+	umo˙zliwia wysyłanie kilku pakietów bez czekania na ich potwierdzenie.
+\end{tw}
+ \begin{tw}\textbf{: SESJI}
+ 	\hangindent=0.4 true in \hangafter=1
+ 	-- Jest ona rzadko uz˙ywana; wiele protokołów funkcje tej warstwy doła˛cza
+ 	do swoich warstw transportowych. Zadaniem warstwy sesji jest zarza˛dzanie przebiegiem
+ 	komunikacji podczas poła˛czenia mie˛dzy dwoma komputerami. Przepływ tej komunikacji
+ 	nazywany jest sesja˛. Sesja moze słuzyc do doła˛czenia uzytkownika do odległego systemu,
+ 	albo do przesyłania zbiorów mi˛edzy róznymi maszynami (np. polecenie ftp). Jesli warstwa
+ 	transportu jest zawodna, zadaniem warstwy sesji jest tez˙ ponowne nawia˛zanie poła˛-
+ 	czenia w przypadku jego przerwania. Warstwa ta okresla, czy komunikacja moze zachodzic
+ 	w jednym, czy obu kierunkach. 	
+ 	Gwarantuje równiez zakonczenie wykonywania bieza˛cego
+ 	z˙a˛dania przed przyje˛ciem kolejnego.\medskip
+ 	
+ 	\noindent \hspace{0.9cm} 	
+ 	Jednym z najbardziej popularnych protokołów warstwy sieci jest protokół RPC (Remote
+ 	Procedure Call – zdalne wywołanie procedury). Protokół ten zajmuje si˛e wysyłaniem przez
+ 	siec zadan od klientów do serwerów i odbieraniem odpowiedzi. RPC musi umiec zlokalizowac komputer, na którym wykonuje si˛e serwer, reagowac w przypadku, gdy serwera nie ma
+ 	oraz rejestrowac pojawienie si˛e nowych serwerów. Poniewa˙z program serwera mo˙ze byc wykonywany na komputerze o zupełnie innej architekturze ni˙z architektura komputera, na
+ 	którym jest wykonywany program klienta, protokół RPC musi zadbac o odpowiednie przekształcenie
+ 	przesyłanych danych. Jesli odpowiedz na wysłane za˛danie nie nadchodzi zbyt
+ 	długo, RPC ponawia wysłanie za˛dania. Musi przy tym zadbac, by to ponowione z˙a˛danie nie
+ 	zostało zrozumiane jako zupełnie nowe. Za pomoca˛protokołu RPC moz˙na takze realizowac
+ 	rozgłaszanie, czyli wysłanie za˛dania jednoczesnie do wielu serwerów. Klient ma wówczas
+ 	kilka mo˙zliwosci: moze czekac na reakcje od wszystkich serwerów, gdy do dalszej pracy
+ 	potrzebuje wszystkich usług; moze czekac tylko na jeden serwer, jesli wysłał komunikat
+ 	typu „niech mi to ktos zrobi”; mo˙ze tez nie czekac w ogóle, jesli celem było jedynie poinformowanie
+ 	o czyms serwerów. Protokół RPC jest ogólnie uznana˛metoda˛ komunikowania
+ 	si˛e w systemach typu klient-serwer.
+ \end{tw}
+\begin{tw}\textbf{: PREZENTACJI}
+	\hangindent=0.4 true in \hangafter=1
+	-- Warstwa prezentacji jest odpowiedzialna za zarza˛dzanie sposobem
+	kodowania wszelkich danych. Nie ka˙zdy komputer korzysta z tych samych schematów
+	kodowania danych, wi˛ec warstwa prezentacji odpowiedzialna jest za translacj˛e mi˛edzy niezgodnymi
+	schematami kodowania danych. Warstwa ta moze byc równiez wykorzystywana
+	do niwelowania ró˙znic mi˛edzy formatami zmiennopozycyjnymi, jak równie˙z do szyfrowania
+	i rozszyfrowywania wiadomosci.\medskip
+	
+	\noindent \hspace{0.9cm} 
+	W asymetrycznym systemie szyfrowania znajomość funkcji szyfrujacej nie wystarcza do
+	odgadnie˛cia funkcji rozszyfrowuja˛cej. Funkcja szyfruja˛ca $S$ i funkcja deszyfruja˛ca $D$ maja˛
+	taka˛ własnosć, z˙e dla kaz˙dego komunikatu $K, D(S(K)) = K$. Rozwia˛zanie problemu
+	elektronicznych podpisów stało sie˛ moz˙liwe dzie˛ki wynalezieniu funkcji, które maja˛ takz˙e
+	własnosc odwrotna˛ $S(D(K)) = K$. W kryptosystemie asymetrycznym kaz˙da ze stron ma
+	dwa klucze: publiczny do szyfrowania i tajny do odszyfrowywania. Zaszyfrowac i wysłac
+	komunikat moze zatem kaz˙dy, ale odczytac go potrafi tylko adresat. Informacja˛ o kluczach
+	powinien zarza˛dzac specjalny proces-centrala, którego klucz publiczny jest jedynym ogólnie
+	dost˛epnym. Aby zdobyc informacj˛e o kluczu osoby X, wysyła si˛e zapytanie do centrali
+	(nieszyfrowane), a otrzymuje sie˛ zaszyfrowana˛ odpowiedz, która˛moz˙na odszyfrowac kluczem
+	publicznym.
+\end{tw}
+\begin{tw}\textbf{: APLIKACJI}
+	\hangindent=0.4 true in \hangafter=1
+	-- Pełni ona role interfejsu pomi˛edzy aplikacjami u˙zytkownika a usługami	sieci. Warstwe˛ te˛ mozna uwazac za inicjuja˛ca˛ sesje komunikacyjne. Protokóły warstwy
+	aplikacji to np.: HTTP, HTTPS, FTP, SSH, Telnet, POP3, SMTP.
+\end{tw}
+\end{document}

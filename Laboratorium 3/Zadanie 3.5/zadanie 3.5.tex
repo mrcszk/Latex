@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{book}      
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[polish]{babel}
+\usepackage{listings}
+\usepackage{color}
+ 
+%\sloppy
+\definecolor{darkred}{rgb}{0.9,0,0}
+\definecolor{grey}{rgb}{0.4,0.4,0.4}
+\definecolor{orange}{rgb}{1,0.6,0.05}
+\definecolor{darkgreen}{rgb}{0.2,0.5,0.05}
+\lstloadlanguages{TeX}
+\lstset{
+	literate={ą}{{\k{a}}}1
+           {ć}{{\'c}}1
+           {ę}{{\k{e}}}1
+           {ó}{{\'o}}1
+           {ń}{{\'n}}1
+           {ł}{{\l{}}}1
+           {ś}{{\'s}}1
+           {ź}{{\'z}}1
+           {ż}{{\.z}}1
+           {Ą}{{\k{A}}}1
+           {Ć}{{\'C}}1
+           {Ę}{{\k{E}}}1
+           {Ó}{{\'O}}1
+           {Ń}{{\'N}}1
+           {Ł}{{\L{}}}1
+           {Ś}{{\'S}}1
+           {Ź}{{\'Z}}1
+           {Ż}{{\.Z}}1,
+	basicstyle=\small\ttfamily,
+  keywordstyle=\color{red}\ttfamily\bfseries\small
+}
+\lstdefinelanguage{Alvis}
+{
+	keywords={jezeli,to,w, przeciwnym ,razie,koniec, warunku},
+	ndkeywords={numer karty kredytowej},
+	sensitive=false,
+	morecomment=[l]{--},
+	morecomment=[s]{/*}{*/},
+	morestring=[b]",
+}
+
+\lstset{language=Alvis,
+	basicstyle=\ttfamily\small,
+	commentstyle=\ttfamily\small,
+	classoffset=0,
+	keywordstyle=\color{darkred}\ttfamily\bfseries\small,
+	classoffset=1,
+	keywordstyle=\color{blue}\ttfamily\small\underline,
+	classoffset=0,
+	stringstyle=\ttfamily\small,
+	commentstyle=\color{blue}\ttfamily\itshape\small,
+	numbers=left,
+	numberstyle=\color{blue}\ttfamily\scriptsize,
+	identifierstyle=\ttfamily\small,
+	showstringspaces=false,
+	morekeywords={
+}} 
+\begin{document}
+	\begin{lstlisting}[numbers=none,escapechar=\%]
+jezeli numer karty kredytowej jest ważny to
+    wykonanie transakcji %w oparciu o numer karty i zamówienie%
+w przeciwnym razie
+    wyświetlenie wiadomości o niepowodzeniu
+koniec warunku
+	\end{lstlisting}
+		
+		
+\end{document}

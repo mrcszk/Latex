@@ -1,0 +1,35 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\let\lll\undefined
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{times}
+\usepackage{anysize}
+
+\begin{document}
+	\textbf{Przykład 8.3.} Wykażemy, że funkcje
+	$$
+	f(x) = -\arctan x\qquad \textsl{i}  \qquad g(x) = \arccos \frac{x}{\sqrt{1+x^2}}$$
+	różnią się jedynie o stałą $B = -\frac{\pi}{2}$.
+	
+	Dla każdego $x \in \mathbb{R}$, mamy:
+	$$
+	f'(x) = \frac{-1}{1+x^2},
+	$$
+	$$
+	g'(x) = \frac{-1}{\sqrt{1-\left ( \frac{x}{\sqrt{1+ x^2}}
+	\right )^2 }} \cdot
+	\frac{\sqrt{1+x^2}-\frac{2x^2}{2\sqrt{1+x^2}}}{1+x^2}
+	=
+	\frac{-1}{1+x^2};
+	$$
+	oznacza to, że: 
+	$$f'(x) = g'(x),$$
+	więc na podstawie ostatniego wniosku możemy napisać:
+	$$\forall x \in \mathbb{R}: f(x) = g(x) + B.$$
+	Jednocześnie, np. dla x=0, mamy:
+	$$f(0) = 0, \qquad g(0)=\frac{\pi}{2},$$
+	zatem nietrudna zauważyć, że ostatnia równość ma miejsce, gdy $B = - \frac{\pi}{2}._{\blacksquare}$
+\end{document}

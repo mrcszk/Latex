@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\let\lll\undefined
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{times}
+\usepackage{anysize}
+
+\marginsize{1.5cm}{1.5cm}{1.5cm}{1.5cm}
+\sloppy 
+
+\theoremstyle{definition}
+\newtheorem{df}{Definicja}
+
+
+\begin{document}
+Istnieje ścisły związek między rozkładem macierzy $A$ na macierze $L$ i $U$ a metodą eliminacji Gaussa. Można wykazać, że elementy kolejnych kolumn macierzy $L$ są równe współczynnikom przez które mnożone są w kolejnych krokach wiersze układu równań celem dokonania eliminacji niewiadomych w odpowiednich kolumnach. Natomiast macierz $U$ jest równa macierzy trójkątnej uzyskanej w eliminacji Gaussa
+$$
+	[A|b] =  \left[
+	 \begin{array}{rrrr}
+	  2 & 2 & 4 & 4\\
+	  1 & 2 & 2 & 4\\
+	  1 & 4 & 1 & 1\\
+	 \end{array}
+	 \right] 
+	 =
+	 \left[
+	 \begin{array}{rrrr}
+	 2 & 2 & 4 & 4\\
+	 0 & 1 & 0 & 2\\
+	 0 & 3 & -1 & -1\\
+	 \end{array}
+	 \right] 
+	 =
+	 \left[
+	 \begin{array}{rrrr}
+	 2 & 2 & 4 & 4\\
+	 0 & 1 & 0 & 2\\
+	 0 & 0 & -1 & -7\\
+	 \end{array}
+	 \right] 
+$$
+$$
+	L = 
+	\left[
+	\begin{array}{rrr}
+	1 & 0 & 0\\
+	\frac{1}{2} & 1 & 0\\
+	\frac{1}{2} & 3 & 1\\
+	\end{array}
+	\right] 	 
+	 \qquad
+	 U =
+	 \left[
+	 \begin{array}{rrrr}
+	 2 & 2 & 4 & 4\\
+	 0 & 1 & 0 & 2\\
+	 0 & 0 & -1 & -7\\
+	 \end{array}
+	 \right] 	 
+$$
+\end{document}
