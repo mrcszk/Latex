@@ -63,6 +63,8 @@ a \wedge a = a\\
 a \wedge  (a \vee b) = a
 $
 
+
+\noindent
 {\bf Prawa de Morgana:} \\
 $
 \neg (a \vee b) = (\neg a) \wedge (\neg b) \\
@@ -90,7 +92,7 @@ Niech $\mathit{BA} = (B,\vee,\wedge,\neg,0,1)$ będzie dwuwartościową algebrą
 \end{df}
 Funkcję boolowską określamy za pomocą odpowiedniego wyrażenia boolowskiego. Można także opisywać funkcję boolowską za pomocą tabelki zawierającej wszystkie możliwe argumenty ze zbioru $\{0,1\}^n$ wraz z~odpowiadającymi im wartościami ze zbioru $\{0,1\}$.
 
-\vspace{3cm}
+\vspace{0.25cm}
 
 Przykład: $f(x_1,x_2,x_3) = (x_1 \vee x_2) \wedge (\neg x_2 \vee x_3)$.
 \begin{tw}
@@ -100,9 +102,9 @@ Funkcję boolowską $n$-zmiennych $f$ można przedstawić w~dwóch postaciach:
 	\item $f(x) = \bigwedge (x_1^{a_1} \vee \dots \vee x_n^{a_n})$, gdzie $a = (a_1, \dots,a_n)$ przebiega zbiór $f^{-1}(0) \subseteq \{0,1\}^n $,
 \end{enumerate}
 przy czym oznaczenie $x_i^{a_i}$ jest równe $x_i$, jeśli $a_i=1$ i~$\neg x_i$, jeśli $a_i=0$.
-\end{tw}
-Postać pierwszą nazywamy {\em alternatywną postacią normalną} (disjunctive normal form) i~oznaczamy przez $\mathit{DNF}_f$. Postać drugą nazywamy {\em koniunkcyjną postacią normalną} (conjunctive normal form) i~oznaczamy przez $\mathit{CNF}_f$.
 
+Postać pierwszą nazywamy {\em alternatywną postacią normalną} (disjunctive normal form) i~oznaczamy przez $\mathit{DNF}_f$. Postać drugą nazywamy {\em koniunkcyjną postacią normalną} (conjunctive normal form) i~oznaczamy przez $\mathit{CNF}_f$.
+\end{tw}
 
 Z powodów technicznych szczególnie atrakcyjna jest sytuacja, gdy do przedstawienia funkcji boo\-lowskiej wystarczą dwa tzw. poziomy logiczne: poziom koniunkcji (na którym występuje koniunkcja stałych lub zmiennych boolowskich) i~poziom alternatywy (gdzie wyrażenia koniunkcyjne z~pierwszego poziomu tworzą alternatywę). Taką postać funkcji boolowskiej nazywamy {\em wielomianem boolowskim}.
 \begin{df}

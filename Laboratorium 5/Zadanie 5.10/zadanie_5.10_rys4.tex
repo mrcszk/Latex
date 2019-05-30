@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=1.6,inner sep=0.8cm]
+\coordinate (A) at (0.5,0);
+\coordinate (B) at (2,-1);
+\coordinate (C) at (2,1);
+\coordinate (D) at (3.5,0);
+\coordinate (E) at (2.5,0);
+
+\draw  (A) -- (B) -- (D) -- (C) --cycle;
+\draw  (A) -- (D);
+\draw  (B) -- (E) -- (C);
+
+\filldraw [fill=green!30!white,opacity=0.5] (C) -- (D) -- (B) -- (E) -- cycle;
+\filldraw [fill=blue!30!white,opacity=0.5] (C) -- (A) -- (B) -- (E) -- cycle;
+\end{tikzpicture}

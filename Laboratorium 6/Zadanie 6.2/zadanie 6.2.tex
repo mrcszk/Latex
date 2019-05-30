@@ -1,0 +1,32 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+
+
+
+\begin{document}
+\begin{algorithm}
+	\begin{algorithmic}
+		\State $\triangleright$ \verb!ASSIGN!
+		\State $\triangleright$ \verb!init(s) = s0;!
+		\State $\triangleright$ \verb!next(s) := case!
+		\ForAll {$si \in s$}
+			\ForAll {$tk \in T$}
+			\State $V_{ik} \gets \emptyset$
+			\ForAll {$sj \in s$}
+				\If {$(M_i,S_i)\xrightarrow{tk} (M_j,S_j) $}
+					\State $V_{ik} \gets V_{ik} \cup \{sj\}$
+				\EndIf
+			\EndFor
+			\State $\triangleright$ \verb!s = si & action = tk:! \{$V_{ik}$ contents\};
+			\EndFor
+		\EndFor
+		\State $\triangleright$ \verb!esac;!
+	\end{algorithmic}
+\end{algorithm}
+
+\end{document}

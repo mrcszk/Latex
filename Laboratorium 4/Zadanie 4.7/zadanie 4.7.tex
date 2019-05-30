@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin2]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{times}
+\usepackage{tikz}
+\usetikzlibrary{calc,through,backgrounds,positioning,fit}
+\usetikzlibrary{shapes,arrows,shadows}
+ 
+\begin{document}
+ 
+\begin{tikzpicture}[scale=1,inner sep=0.4mm]
+\coordinate (O) at (0,0);
+\coordinate (A) at (-75:2cm);
+\coordinate (B) at (85:2cm);
+\fill[green!60!white] (O) -- (2,0) arc (0:85:2.0cm) -- cycle;
+\fill[green!60!white] (O) -- (2,0) arc (0:-75:2.0cm) -- cycle;
+\draw (0,0) circle (2cm);
+\node at (O) [circle,fill=black!80!white] {};
+\node at (A) [circle,fill=black!80!white] {};
+\node at (B) [circle,fill=black!80!white] {};
+\node at (O) [left=2pt] {$O$};
+\node at (A) [above left=2pt] {$A$};
+\node at (B) [below left=2pt] {$B$};
+\node at (O) [right=5pt] {$\alpha = 160^\circ$};
+
+\end{tikzpicture}
+ 
+\end{document}

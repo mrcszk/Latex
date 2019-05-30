@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.12)  22 APR 2019 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.12)  29 MAY 2019 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -122,24 +122,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 18.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
  [1
 
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./zadanie 1.7.
 aux) ) 
 Here is how much of TeX's memory you used:
- 1380 strings out of 494486
- 16252 string characters out of 6175765
+ 1384 strings out of 494486
+ 16297 string characters out of 6175765
  81738 words of memory out of 5000000
- 5077 multiletter control sequences out of 15000+600000
- 9870 words of font info for 26 fonts, out of 8000000 for 9000
+ 5079 multiletter control sequences out of 15000+600000
+ 12673 words of font info for 28 fonts, out of 8000000 for 9000
  56 hyphenation exceptions out of 8191
- 23i,14n,23p,291b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,14n,23p,465b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "zadanie 1.7.pdf" (1 page, 17223 bytes).
+texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb>
+Output written on "zadanie 1.7.pdf" (1 page, 25862 bytes).
 PDF statistics:
- 13 PDF objects out of 1000 (max. 8388607)
- 8 compressed objects within 1 object stream
+ 17 PDF objects out of 1000 (max. 8388607)
+ 11 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

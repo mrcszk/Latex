@@ -1,0 +1,19 @@
+\frametitle{Algorytm}
+\begin{algorithmic}
+\State $\triangleright$ \verb!ASSIGN! \pause
+\State $\triangleright$ \verb!init(s) = s0;! \pause
+\State $\triangleright$ \verb!next(s) := case! \pause
+\ForAll {$si \in s$}\pause
+\ForAll {$tk \in T$}\pause
+\State $V_{ik} \gets \emptyset$\pause
+\ForAll {$sj \in s$}\pause
+\If {$(M_i,S_i)\xrightarrow{tk} (M_j,S_j) $}\pause
+\State $V_{ik} \gets V_{ik} \cup \{sj\}$\pause
+\EndIf\pause
+\EndFor
+\State $\triangleright$ \verb!s = si & action = tk:! \{$V_{ik}$ contents\};\pause
+\EndFor
+\EndFor
+\State $\triangleright$ \verb!esac;!
+\end{algorithmic}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.12)  22 APR 2019 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.12)  29 MAY 2019 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -122,8 +122,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \extratabsurround=\skip47
 \backup@length=\skip48
 \ar@cellbox=\box32
-)
-No file "zadanie 3.7".aux.
+) (./zadanie 3.7.aux)
 \openout1 = `"zadanie 3.7.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -139,6 +138,7 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 14.
+
 (c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -211,114 +211,86 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
 
-! Package array Error: Only one column-spec. allowed..
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 		\multicolumn{2}{|c|c c c}{Identyfikator}
-                                               &{ Liczba pudełek}&{ Wartoś...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error: Only one column-spec. allowed..
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 		\multicolumn{2}{|c|c c c}{Identyfikator}
-                                               &{ Liczba pudełek}&{ Wartoś...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error: Only one column-spec. allowed..
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 		\multicolumn{2}{|c|c c c}{Identyfikator}
-                                               &{ Liczba pudełek}&{ Wartoś...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (368.15479pt too wide) in alignment at lines 28--30
- [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (20.52678pt too wide) in alignment at lines 16--21
+ [] [] [] [] 
  []
 
 
-Overfull \hbox (368.15479pt too wide) in alignment at lines 30--50
- [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (20.52678pt too wide) in alignment at lines 21--25
+ [] [] [] [] 
  []
 
 
-Overfull \hbox (368.15479pt too wide) in alignment at lines 50--70
- [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (20.52678pt too wide) in alignment at lines 25--26
+ [] [] [] [] 
  []
 
 
-Overfull \hbox (368.15479pt too wide) in alignment at lines 70--90
- [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (20.52678pt too wide) in alignment at lines 26--29
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (20.52678pt too wide) in alignment at lines 29--49
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (20.52678pt too wide) in alignment at lines 49--69
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (20.52678pt too wide) in alignment at lines 69--89
+ [] [] [] [] 
  []
 
 [1
 
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (368.15479pt too wide) in alignment at lines 90--91
- [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (20.52678pt too wide) in alignment at lines 89--109
+ [] [] [] [] 
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 91.
-
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 98.
-
-LaTeX Warning: Reference `fig:jaskolkaoknowka' on page 2 undefined on input lin
-e 98.
+Overfull \hbox (20.52678pt too wide) in alignment at lines 109--129
+ [] [] [] [] 
+ []
 
 [2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 105.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 105.
+Overfull \hbox (20.52678pt too wide) in alignment at lines 129--149
+ [] [] [] [] 
+ []
 
 
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
+Overfull \hbox (20.52678pt too wide) in alignment at lines 149--169
+ [] [] [] [] 
+ []
 
-[3] (./zadanie 3.7.aux)
+[3]
+Overfull \hbox (20.52678pt too wide) in alignment at lines 169--174
+ [] [] [] [] 
+ []
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[4] (./zadanie 3.7.aux) ) 
 Here is how much of TeX's memory you used:
- 2464 strings out of 494486
- 32648 string characters out of 6175765
- 153106 words of memory out of 5000000
- 6111 multiletter control sequences out of 15000+600000
+ 2458 strings out of 494486
+ 32560 string characters out of 6175765
+ 127173 words of memory out of 5000000
+ 6103 multiletter control sequences out of 15000+600000
  9928 words of font info for 19 fonts, out of 8000000 for 9000
  56 hyphenation exceptions out of 8191
- 41i,9n,25p,789b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb>
-Output written on "zadanie 3.7.pdf" (3 pages, 33152 bytes).
+ 41i,6n,25p,280b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.en
+c}<c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on "zadanie 3.7.pdf" (4 pages, 31673 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

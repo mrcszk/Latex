@@ -60,10 +60,12 @@
 	showstringspaces=false,
 	morekeywords={
 }} 
+
+\thispagestyle{empty}
 \begin{document}
-	\begin{lstlisting}[numbers=none,escapechar=\%]
-jezeli numer karty kredytowej jest ważny to
-    wykonanie transakcji %w oparciu o numer karty i zamówienie%
+	\begin{lstlisting}[numbers=none,escapechar=~]
+jezeli ~\textcolor{blue}{\ttfamily\small\underline{numer karty kredytowej}}~ jest ważny to
+    wykonanie transakcji ~w oparciu o numer karty i zamówienie~
 w przeciwnym razie
     wyświetlenie wiadomości o niepowodzeniu
 koniec warunku

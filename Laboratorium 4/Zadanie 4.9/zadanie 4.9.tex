@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin2]{inputenc}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{times}
+\usepackage{anysize}
+\usetikzlibrary{calc,through,backgrounds,positioning,fit}
+\usetikzlibrary{shapes,arrows,shadows}
+ 
+\begin{document}
+ 
+\tikzstyle{leaf}=[isosceles triangle,draw,shape border rotate=90,isosceles triangle stretches=true, minimum height=12mm,minimum width=12mm,inner sep=0,yshift={-20mm}]
+ 
+\begin{tikzpicture}[auto,scale=1,inner sep=0.4mm]
+\node (u) at (0,0)  {$u$};
+\node (c) at (0,-1) [shape=circle,draw] {$a,c$};
+\node [leaf] (l) at (-1.3,-1) {Left};
+\node [leaf] (r) at (1.3,-1) {Right};
+\draw [-triangle 60](u) to  (c);
+\draw [-triangle 60] (c) edge node  {$a(u) < c$} (r.north);
+\draw [-triangle 60] (c) edge node[swap] {$a(u) \geqslant c$} (l.north);
+
+\end{tikzpicture}
+\end{document}

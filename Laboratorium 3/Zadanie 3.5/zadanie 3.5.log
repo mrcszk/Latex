@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.12)  25 APR 2019 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.12)  29 MAY 2019 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -112,19 +112,19 @@ File: lstlang3.sty 2018/09/02 1.7 listings language file
 ) (./zadanie 3.5.aux)
 \openout1 = `"zadanie 3.5.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 65.
  (c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -144,37 +144,42 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks19
 )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 64.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 66.
  (c:/texlive/2018/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 67.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 67.
 
-Overfull \hbox (10.77104pt too wide) in paragraph at lines 66--67
+Overfull \hbox (10.77104pt too wide) in paragraph at lines 68--69
 [][][][][][][]\T1/pcr/m/n/10.95 w oparciu o numer karty i zamówienie 
  []
 
-[1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1
 
-]
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./zadanie 3.5.aux) ) 
 Here is how much of TeX's memory you used:
- 3359 strings out of 494486
- 42552 string characters out of 6175765
+ 3371 strings out of 494486
+ 42699 string characters out of 6175765
  298640 words of memory out of 5000000
- 7031 multiletter control sequences out of 15000+600000
- 10662 words of font info for 24 fonts, out of 8000000 for 9000
+ 7039 multiletter control sequences out of 15000+600000
+ 10649 words of font info for 31 fonts, out of 8000000 for 9000
  56 hyphenation exceptions out of 8191
  26i,5n,40p,188b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c
 :/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2018/t
-exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb>
-Output written on "zadanie 3.5.pdf" (1 page, 21830 bytes).
+exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on "zadanie 3.5.pdf" (1 page, 19478 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
+ 17 PDF objects out of 1000 (max. 8388607)
+ 11 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

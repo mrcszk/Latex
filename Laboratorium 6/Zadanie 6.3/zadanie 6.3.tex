@@ -1,0 +1,33 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\sloppy
+
+
+\begin{document}
+\begin{algorithm}
+	\begin{algorithmic}[1]
+		\State $V\colon$a set of vertices
+		\State $E\colon$a set of edges
+		\State $G \Leftarrow (V,E)$
+		\State $C\Leftarrow \{\{v_i\}|v_i \in  G(V)\}$
+		\State $H\colon$a max heap of $\Delta Q_{c_x,c_y}$
+		\While{$H$ is not empty}
+		\State extract $max\Delta Q_{c_x,c_y}$ from $H$, where any $c_x$, $c_y \in C$
+		\If {$max\Delta Q_{c_x,c_y} < 0 $}
+		\State break
+		\EndIf
+		\State $c_z \Leftarrow c_x \cup c_y$
+		\State $C \Leftarrow C - c_x - c_y +c_z$
+		\State $N_{c_{z}} \Leftarrow \{c_k | v_m \in c_z$,$ v_n \in c_k$, $e_{mn} \in G(E) \}$
+		\For {$c_k \in N_{c_{z}}$}
+		\State $\Delta Q_{c_x,c_y} \Leftarrow Q(G,C - c_k - c_z + (c_k \cup c_z)) -Q(G,C)$
+		\EndFor
+		\EndWhile
+	\end{algorithmic}
+\end{algorithm}
+\end{document}
